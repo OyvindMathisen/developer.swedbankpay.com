@@ -1,5 +1,5 @@
 {%- capture text -%}
-Indicates the state of the transaction, usually `initialized`, `completed` or
+Indicates the state of the transaction. Valid states are `initialized`, `completed` or
 `failed`. If a partial {{ transaction }} has been done and further transactions
 are possible, the state will be `awaitingActivity`.
 {%- endcapture -%}

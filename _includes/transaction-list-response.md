@@ -8,10 +8,10 @@
     {% assign plural = transaction | append: "s" %}
 {% endif %}
 
-The `{{ transaction }}` resource contains information about the
-`{{ transaction }}` transaction made against a {{ api_resource }} payment. You can
-return a specific `{{ transaction }}` transaction by performing a `GET` request
-towards the specific transaction's `id`.
+The `transactions` resource contains information about the `transactions` made 
+against a {{ api_resource }} payment. You can return a specific transaction by 
+performing a `GET` request towards the `transactions` endpoint by appending the 
+transaction id.
 
 {:.code-view-header}
 **Response**
@@ -75,7 +75,7 @@ Content-Type: application/json
 | `payment`                         | `string`  | {% include field-description-id.md sub_resource=plural %}                                                                                                                                                    |
 | `{{ plural }}`                    | `object`  | The current `{{ plural }}` resource.                                                                                                                                                                         |
 | └➔&nbsp;`id`                      | `string`  | {% include field-description-id.md resource=plural %}                                                                                                                                                        |
-| └➔&nbsp;`{{ transaction }}List`   | `array`   | The array of {{ transaction }} transaction objects.                                                                                                                                                          |
+| └➔&nbsp;`{{ transaction }}List`   | `array`   | The array of {{ transaction }} objects.                                                                                                                                                                      |
 | └➔&nbsp;`{{ transaction }}List[]` | `object`  | The {{ transaction }} transaction object described in the `{{ transaction }}` resource below.                                                                                                                |
 | └─➔&nbsp;`id`                     | `string`  | {% include field-description-id.md resource="transaction" %}                                                                                                                                                 |
 | └─➔&nbsp;`created`                | `string`  | The ISO-8601 date and time of when the transaction was created.                                                                                                                                              |

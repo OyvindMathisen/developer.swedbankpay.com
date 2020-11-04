@@ -36,8 +36,6 @@ Content-Type: application/json
         "acquirerTerminalId": "39",
         "acquirerTransactionTime": "2017-08-29T13:42:18Z",
         "authenticationStatus": "Y",{% endif %}
-        "itemDescriptions": {
-            "id": "/psp/{{ api_resource }}/payments/{{ page.payment_id }}/transactions/{{ page.transaction_id }}/itemDescriptions"
         },
         "transaction": {
             "id": "/psp/{{ api_resource }}/payments/{{ page.payment_id }}/transactions/{{ page.transaction_id }}",
@@ -96,8 +94,6 @@ Content-Type: application/json
 | └➔&nbsp;`acquirerTerminalId`      | `string`  | The ID of the acquirer terminal.                                                                                                                                                                             |
 | └➔&nbsp;`acquirerTransactionTime` | `string`  | The ISO-8601 date and time of the acquirer transaction.                                                                                                                                                      |
 | └➔&nbsp;`authenticationStatus`    | `string`  | `Y`, `A`, `U` or `N`. Indicates the status of the authentication.                                                                                                                                            | {% endif %}                           |
-| └➔&nbsp;`itemDescriptions`        | `object`  | The object representation of the `itemDescriptions` resource.                                                                                                                                                |
-| └─➔&nbsp;`id`                     | `string`  | {% include field-description-id.md resource="itemDescriptions" %}                                                                                                                                            |
 | └➔&nbsp;`transaction`             | `object`  | The object representation of the generic transaction resource.                                                                                                                                               |
 | └─➔&nbsp;`id`                     | `string`  | {% include field-description-id.md resource="transaction" %}                                                                                                                                                 |
 | └─➔&nbsp;`created`                | `string`  | The ISO-8601 date and time of when the transaction was created.                                                                                                                                              |
