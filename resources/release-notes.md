@@ -67,7 +67,7 @@ this very documentation, not to a version of any APIs described by it." %}
 
 *   Various bug fixes
 *   Various corrections and typo fixes
-*   Corrected information about [3D-Secure][card-3ds-info]
+*   Corrected information about [3-D Secure][card-3ds-info]
 *   Added paragraphs about different consumer flows in [Checkin][Checkin]
 *   Added link to gift card on the [front page][frontpage]
 

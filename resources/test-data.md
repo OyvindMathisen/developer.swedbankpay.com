@@ -145,9 +145,9 @@ this section.
 After pressing the purchase button you will then be taken to a menu where you
 can select Authentication status.
 
-![3D-Secure Emulator without dropdown menu][3ds-emulator-no-dropdown]{:width="805px" :height="685px"}
+![3-D Secure Emulator without dropdown menu][3ds-emulator-no-dropdown]{:width="805px" :height="685px"}
 
-![3D-Secure Emulator with dropdown menu][3ds-emulator-with-dropdown]{:width="805px" :height="685px"}
+![3-D Secure Emulator with dropdown menu][3ds-emulator-with-dropdown]{:width="805px" :height="685px"}
 
 In this menu, there are a few different options to choose from. Choose the
 status you want to test, click the Continue button and the

@@ -37,13 +37,12 @@ We encourage you to keep [Postel's robustness principle][robustness-principle]
 in mind. Build your integration in a way that is resilient to change, wherever
 it may come. Don't confine yourself to the limits of our current documentation
 examples. A `string` looking like a `guid` must still be handled and stored like
-a `string`, not as a guid, as it could be a `URI` in the future. The day our
+a `string`, not as a `guid`, as it could be a `URI` in the future. The day our
 `transactionNumber` ticks past 1,000,000, make sure your integration can handle
 number 1,000,001. If some `fields`, `operations` or `headers` can't be
-understood, you must be able to ignore them. We have built our requests in a way
-which allows the `payeeInfo` field to be placed before `metadata`, or vice versa
-if you want. We don't expect a specific order of elements, so we ask that you
-shouldn't either.
+understood, you must be able to ignore them. We have built our requests so that
+the `payeeInfo` field can placed before `metadata`, or vice versa if you want.
+We don't expect a specific order of elements, so we ask that you don't either.
 
 ## Headers
 

@@ -351,9 +351,9 @@ sequenceDiagram
     note left of Merchant: Second API request
     SwedbankPay->>Merchant: Authorization resource
     deactivate SwedbankPay
-        alt No 3DSecure required
+        alt No 3-D Secure required
             Merchant->>Payer: Redirected to merchant's completeUrl
-        else 3DSecure required
+        else 3-D Secure required
             Merchant->>Payer: Redirect to rel:redirect-authentication
             deactivate Merchant
             note left of Payer: redirect to card issuing bank
